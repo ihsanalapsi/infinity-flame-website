@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Tajawal";
+    src: url("/font/Tajawal-Medium.ttf")
+  }
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: hsl(0, 100%, 99%); */
+}
+
+body{
+    font-family: "Tajawal" , sans-serif;
+} 
+
+button {
+    
+    font-family: "Tajawal" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+
+}
+
+a{
+    text-decoration: none ;
+}
+li{
+    list-style: none ;
+}
+h3 {
+    font-size: 44px;
+    line-height: 32px;
+    color: #121212;
+    font-weight: 600;
+}
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+
+    font-weight: normal;
+}
+
+.main-btn {
+
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0px 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #e68c06;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+
+}
+/*  nav = */
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 1000000;
+    /* background-color: hsl(0, 100%, 99%); */
+}
+
+.logo {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.nav .menu-bar .menu-items{
+
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the menu to the left */
+    flex-grow: 0; /* This will prevent the menu items from growing to fill the available space */
+}
+.nav .menu-bar .menu-items  li{
+  
+   
+    margin: 0 15px;
+   
+}
+.nav .menu-bar .menu-items  a{
+
+    color: black;
+    font-size: 18px;
+    font-weight: 600px;
+
+}
+.nav .menu-bar .menu-items  li a{
+
+    color: #000;
+    font-size: 18px;
+    font-weight: 600px;
+
+}
+
+.nav .menu-bar .menu-items  li a:hover{
+
+    color: #e68c06;
+
+
+}
+
+
+.back{
+    background-image: url(/imgs/back.jpg);
+    width: 100%;
+    height:120vh ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.back .overlay{
+    background-image: linear-gradient(180deg, rgb(231, 230, 227) 0%, rgba(219,49,6,0) 100%);
+    width: 100%;
+    height: 100%;
+}
+.back .hero-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.back .hero-shape img {
+    width: 100%;
+    display: block;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.hero-text h6 {
+    color: rgb(255, 145, 0);
+}
+.hero-text .header-btn {
+    margin-top: 22px;
+}
+.hero-text .header-btn li {
+    display: inline-block;
+    margin: 10px 10px 0px 0px ;
+}
+.hero-text .header-btn li a.main-btn{
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0 , 15);
+
+}
+.hero-text .header-btn li a.main-btn i{
+
+    margin-left: 5px;
+    color: #ffffff;
+
+}
+.hero-text .header-btn .btn-one{
+
+    color: #ffffff;
+
+}
+.hero-text .header-btn .btn-one::before{
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right , #f87428 ,#ffa602);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+
+}
+.hero-text .header-btn .btn-one:hover::before{
+
+
+    background-image: linear-gradient(to left , #f87428 ,#ffa602);
+    background-position: right center;
+
+}
+.hero-text .header-btn .btn-tow:hover::before{
+
+
+
+    box-shadow: 0 3px 25 px 0 rgb(0, 0, 0 , 15);
+
+}
+button {
+    padding: 9px 25px;
+    background-color: #e68c06;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #db3106;
+}
+
+.nav .cta {
+  margin-right: auto;
+}
