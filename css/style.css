@@ -205,6 +205,66 @@ h6 {
     box-shadow: 0 3px 25 px 0 rgb(0, 0, 0 , 15);
 
 }
+
+/* Services */
+#warpper{
+    margin: 5rem 7rem 10rem 7rem;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* .service h6{
+    margin-bottom: 6rem;
+} */
+.service .service-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.service .service-content .box{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.service .service-content .box .box-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.service .service-content .box .box-one .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.service .service-content .box .box-one .services i{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #e68c06;
+}
+.service .service-content .box .box-one .services .service-content{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+.service .service-content .service-img{
+    width: 40%;
+}
+.service .service-content .service-img img{
+    width: 100%;
+}
 button {
     padding: 9px 25px;
     background-color: #e68c06;
