@@ -74,7 +74,11 @@ h6 {
     z-index: 1000000;
     /* background-color: hsl(0, 100%, 99%); */
 }
-
+.nav.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3) ;
+}
 .logo {
     margin-right: 0;
     cursor: pointer;
@@ -216,6 +220,7 @@ h6 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom:10rem ;
 }
 /* .service h6{
     margin-bottom: 6rem;
@@ -270,6 +275,7 @@ h6 {
 .pricing{
     display: block;
     text-align: center ;
+    margin-bottom:10rem ;
 }
 .pricing h6{
     margin-bottom: 6rem;
@@ -383,6 +389,7 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom:10rem ;
 }
 .callToAct .parallax{
     position: absolute;
@@ -408,10 +415,10 @@ h6 {
     position: relative;
     text-align: center;
 }
-.fa-envelope:before {
+ .fa-envelope:before {
     content: "\f0e0";
-    padding-left: 15px;
-}
+    padding-right: 15px;
+} 
 .callToAct .parallax .call-news i{
     color: #e68c06;
 
@@ -421,6 +428,9 @@ h6 {
 .callToAct .parallax .call-news input {
     border: none;
     outline: none;
+    direction: ltr; /* Set text direction to left-to-right */
+    text-align: left; /* Align text to the left */
+
     font-size: 18px;
 
 }
@@ -433,8 +443,175 @@ h6 {
     color: #fff;
     padding: 15px 20px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-left: 20px;
 
+}
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.contact h3{
+    margin-bottom: 1rem;
+}
+.contact h6{
+    margin-bottom: 3rem;
+}
+.contact .form {
+    width: 70%;
+    
+}
+.contact .form  .first-row , .contact .form .secend-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+
+}
+.contact .form  .first-row input, .contact .form .secend-row input{
+    width: 47%;
+    height: 55px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+
+}
+.contact .form textarea{
+    width: 100%;
+    border: 1px solid #cbced1;
+    resize: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+}
+.contact .form .header-btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+.contact .form .header-btn a {
+    background-image: linear-gradient(to left , #f87428 ,#ffa602);
+    border:none; 
+    color: #edf0f1;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+
+}
+
+/* Footer  */
+footer{
+    background-color: #F4F6F7;
+    padding: 7rem;
+}
+footer .row-one{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+
+}
+footer .row-one ul{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+footer .row-one a{
+    padding-right: 20px;
+    font-size: 25px;
+    color: #6c6c6c;
+}
+footer .secend-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+footer .secend-row h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 20px;
+
+}
+footer .secend-row li {
+    padding-bottom: 12px;
+}
+footer .secend-row li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #121212;
+
+}
+footer .secend-row .first-row:nth-child(4){
+    max-width: 300px;
+
+}
+footer .secend-row .newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+
+}
+footer .secend-row .newsletter input{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 0;
+    background-color: rgba(66, 66, 66, 0.12);
+    font-weight: 500;
+    outline: none;
+}
+footer .secend-row .newsletter input::placeholder{
+    opacity: 1;
+    color: #ffffff;
+}
+footer .secend-row .newsletter button {
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjusted to be on the left */
+    width: 44px;
+    height: 44px;
+    border-top-left-radius: 50px; /* Adjusted to have left-rounded border */
+    border-bottom-left-radius: 50px; /* Adjusted to have left-rounded border */
+    border: 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: none; /* If not needed, you can remove this line */
+    cursor: pointer;
+}
+footer .secend-row .text{
+    margin-top: 16px;
+}
+
+.copyright {
+    background-color: #e68c06;
+    padding: 23px 0;
+
+}
+.copyright p{
+    text-align: center;
+    color: #fff;
+}
+.copyright p a{
+    text-align: center;
+    color: #424242;
 }
 button {
     padding: 9px 25px;
@@ -443,7 +620,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
+} 
 
 button:hover {
     background-color: #db3106;
