@@ -5,6 +5,7 @@ $(function() {
         $nav.toggleClass('scrolled' , $(this).scrollTop() > $nav.height());
     });
 });
+
 var phoneNumber = "+905511681241";
 var encodedPhoneNumber = encodeURIComponent(phoneNumber);
 
