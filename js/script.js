@@ -6,6 +6,20 @@ $(function() {
     });
 });
 
+var menu = document.getElementById("bar");
+var items = document.getElementById("navbar");
+
+items.style.left = "-360px";
+menu.onclick = function(){
+    if(items.style.left == "-360px"){
+        items.style.left = "0";
+    }
+    else{
+        items.style.left = "-360px";
+    }
+}
+
+
 var phoneNumber = "+905511681241";
 var encodedPhoneNumber = encodeURIComponent(phoneNumber);
 

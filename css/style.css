@@ -18,14 +18,7 @@ body{
     font-family: "Tajawal" , sans-serif;
 } 
 
-button {
-    
-    font-family: "Tajawal" , sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
 
-}
 
 a{
     text-decoration: none ;
@@ -84,6 +77,39 @@ h1 {
     z-index: 1000000;
     /* background-color: hsl(0, 100%, 99%); */
 }
+.nav .navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
+    
+}
+.nav .navbar-toggler .toggler-icon{
+width: 27px;
+height: 3px;
+background-color: #121212;
+margin: 5px 0;
+position: relative;
+display: block;
+transition: all 0.3s ease-in-out 0s;
+
+}
+.nav button {
+    
+    font-family: "Tajawal" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+
+}
+.nav button {
+    padding: 9px 25px;
+    background-color: #e68c06;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} 
+
 .nav.scrolled{
     text-align: center;
     align-items: center;
@@ -285,20 +311,30 @@ h1 {
 
 /*  Pricing */
 .pricing{
-    display: block;
-    text-align: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     margin-bottom:10rem ;
 }
 .pricing h6{
+    text-align: center;
     margin-bottom: 6rem;
 }
 .pricing .table {
-    display: flex;
-    flex-direction: row;
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(400px ,1fr));
+    text-align: center;
+    width: 100%;
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
 }
 .pricing .basic{
+    
+    margin:  auto ;
     width: 355px;
     height: 100%;
     border: 1px solid #e68c06;
@@ -797,19 +833,80 @@ footer .secend-row .text{
     text-align: center;
     color: #424242;
 }
-button {
-    padding: 9px 25px;
-    background-color: #e68c06;
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-} 
 
-button:hover {
-    background-color: #db3106;
+
+
+@media only screen and (max-width: 946px){
+    
+    .nav{
+        padding: 2px;
+
+    }
+    .nav .cta {
+        padding-left: 10px;
+    }
+    .hero-text h3{
+        font-size: 40px;
+    }
+    .about-main img {
+        height: 400px;
+    }
+    .callToAct .parallax h3 {
+        font-size: 35px;
+    }
+    .callToAct .parallax .call-news{
+       width: 500px;
+    }
+    
 }
+@media only screen and (max-width: 774px){
+        /*  nav = */
+    .nav {
+        padding: 0.7rem 1rem;
+    }
+    .nav .navbar-toggler{
+        display: block;
+        position: absolute;
+        top: 26px;
+        left:  16px;
+        z-index: 1000000;
+    }
+    .nav .menu-bar{
+        position: fixed;
+        top: 55px;
+        width: 300px;
+        left: -360px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256, 0.9);
+        transition: all 0.6s ease ;
 
-.nav .cta {
-  margin-right: auto;
+    }
+
+    .nav .menu-bar .menu-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify ;
+        padding: 40px 0;
+    }
+
+    .nav .menu-bar .menu-items  li{
+
+        margin:2rem 30px;
+    }
+    .nav button {
+        display: none;
+    }
+    .nav a.icon {
+        display: block;
+        position: absolute;
+        right: 750px;
+        top: 20px;
+      }
+      
+
+}
+@media only screen and (max-width: 541px){
+    
 }
